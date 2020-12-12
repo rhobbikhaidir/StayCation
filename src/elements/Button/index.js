@@ -45,14 +45,16 @@ export default function Button(props) {
       );
     } else {
       return (
-        <Link
-          to={props.href}
-          className={className.join(' ')}
-          style={props.style}
-          onClick={onClick}
-        >
-          {props.children}
-        </Link>
+        <div>
+          <Link
+            to={props.href}
+            className={className.join(' ')}
+            style={props.style}
+            onClick={onClick}
+          >
+            {props.children}
+          </Link>
+        </div>
       );
     }
   }
