@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InputNumber from 'elements/Form/InputNumber';
 import InputDate from 'elements/Form/InputDate';
 import Breadcrumb from 'elements/Breadcrumb';
+import itemDetails from 'json/itemDetails.json';
 
 export default class Example extends Component {
   render() {
@@ -17,7 +18,7 @@ export default class Example extends Component {
           style={{ height: '100vh' }}
         >
           <div className="col-auto">
-            <Breadcrumb data={breadcrumbList} />
+            <InputNumber value={3} />
           </div>
         </div>
       </div>

@@ -9,12 +9,17 @@ import landingpage from 'json/landingPage';
 import Testimony from 'parts/Testimony';
 import Footer from 'parts/Footer';
 
-console.log(landingpage);
 export default class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.refMostPicked = React.createRef();
   }
+
+  componentDidMount() {
+    window.title = 'StayCation | Home';
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <>
