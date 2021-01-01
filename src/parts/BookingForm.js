@@ -77,6 +77,27 @@ export default class BookingForm extends Component {
           name="duration"
           value={data.duration}
         />
+        <label htmlFor="date">Pick a date</label>
+        <InputDate onChange={this.updateDate} name="date" value={data.date} />
+        <h6 className="text-gray-500 font-weight-light">
+          You will pay
+          <span className="text-gray-900">
+            ${itemDetails.price * data.duration} USD
+          </span>{' '}
+          per{' '}
+          <span className="text-gray-900">
+            {data.duration} {itemDetails.unit}
+          </span>
+        </h6>
+        <Button
+          className="btn"
+          hasShadow
+          isPrimary
+          isBlock
+          onClick={startBooking}
+        >
+          Continue to Book
+        </Button>
       </div>
     );
   }

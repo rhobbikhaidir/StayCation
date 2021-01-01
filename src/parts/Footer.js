@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
         <div className="row">
           <div className="col text-center copyrights">
-            Copyright 2020 . CreativeSquadPro . StayCations
+            Copyright 2021 . CreativeSquadPro . StayCations
           </div>
         </div>
       </div>
