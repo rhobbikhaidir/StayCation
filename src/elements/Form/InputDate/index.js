@@ -38,15 +38,11 @@ export default function Date(props) {
   };
 
   const check = focus => {
-    focus.indecOf(1) < 0 && setIsShowed(false);
+    focus.indexOf(1) < 0 && setIsShowed(false);
   };
 
-  // const displayDate = `${value.startDate ? formatDate(value.startDate) : ''}
-  // ${value.endDate ? '-' + formatDate(value.endDate) : ''}
-  // `;
-  const displayDate = `${value.startDate ? formatDate(value.startDate) : ''}${
-    value.endDate ? ' - ' + formatDate(value.endDate) : ''
-  }`;
+  const displayDate = `${value.startDate ? formatDate(value.startDate) : ''}
+${value.endDate ? ' - ' + formatDate(value.endDate) : ''}`;
 
   return (
     <div
@@ -63,7 +59,8 @@ export default function Date(props) {
           readOnly
           type="text"
           className="form-control"
-          value={displayDate}
+          value={`${value.startDate ? formatDate(value.startDate) : ''}
+${value.endDate ? ' - ' + formatDate(value.endDate) : ''}`}
           placeholder={placeholder}
           onClick={() => setIsShowed(!isShowed)}
         />

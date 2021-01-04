@@ -78,7 +78,7 @@ export default class BookingForm extends Component {
           value={data.duration}
         />
         <label htmlFor="date">Pick a date</label>
-        <InputDate onChange={this.updateDate} name="date" value={data.date} />
+        <InputDate onChange={this.updateDate} value={data.date} />
         <h6 className="text-gray-500 font-weight-light">
           You will pay
           <span className="text-gray-900">

@@ -38,7 +38,7 @@ export default function Number(props) {
   };
 
   const minus = () => {
-    value < min &&
+    value > min &&
       onChange({
         target: {
           name: name,

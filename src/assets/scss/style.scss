@@ -54,6 +54,9 @@
   &:hover {
     text-decoration: none;
   }
+  &.mx-auto {
+    border-color: none;
+  }
 }
 
 header {
