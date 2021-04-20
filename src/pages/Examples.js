@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import InputNumber from 'elements/Form/InputNumber';
-import InputDate from 'elements/Form/InputDate';
-import Breadcrumb from 'elements/Breadcrumb';
-import itemDetails from 'json/itemDetails.json';
 
 export default class Example extends Component {
   render() {

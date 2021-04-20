@@ -1,5 +1,5 @@
 import './assets/scss/style.scss';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from 'pages/LandingPage';
 import Example from 'pages/Examples';
 import DetailPage from 'pages/DetailPages';

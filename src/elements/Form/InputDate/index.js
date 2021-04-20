@@ -59,8 +59,7 @@ ${value.endDate ? ' - ' + formatDate(value.endDate) : ''}`;
           readOnly
           type="text"
           className="form-control"
-          value={`${value.startDate ? formatDate(value.startDate) : ''}
-${value.endDate ? ' - ' + formatDate(value.endDate) : ''}`}
+          value={displayDate}
           placeholder={placeholder}
           onClick={() => setIsShowed(!isShowed)}
         />
